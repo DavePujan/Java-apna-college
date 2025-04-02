@@ -6,7 +6,7 @@ public class linearSearch {
             if(numbers[i] == key) {
                 return i;
             }
-        }1
+        }
         return -1;
     }
 
