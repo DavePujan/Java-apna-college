@@ -5,6 +5,7 @@ public class basicHashSet {
         int k = 5; // key to be searched in set
         System.out.println("Array after removing duplicates using HashSet: " + Arrays.toString(basicOfHashSet(arr)));
         System.out.println("Is key " + k + " present in set? " + (containsKey(arr, k) == 1 ? "Yes" : "No"));
+        printSet(arr);
     }
 
     public static int[] basicOfHashSet(int[] arr){
@@ -32,5 +33,17 @@ public class basicHashSet {
         } else { // or false if not found in set
             return 0;
         }
+    }
+
+    public static int printSet(int[] arr){
+        HashSet<Integer> set = new HashSet<>();
+        for(int num : arr){
+            set.add(num);
+        }
+
+        for(int num : set){
+            System.out.print(num + " ");
+        }
+        return 0;
     }
 }
