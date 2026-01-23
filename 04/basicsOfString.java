@@ -1,10 +1,10 @@
 import java.util.*;
 class basicsOfString {
     public static void main(String[] args) {
-       String s = "leetcode";
+       String s = "leetcode"; // string initialization
+       char x = 'a'; // char initialization
 
     // StringBuilder: because of immutability java use it to modify string
-
 
 
     int n = s.length();
@@ -85,6 +85,8 @@ class basicsOfString {
     s.indexOf("e"); // returns index of first occurrence of "e"
     System.out.println(s.indexOf("e"));
 
+    // if not found it returns -1
+
     s.indexOf("code"); // returns index of first occurrence of "code"
     System.out.println(s.indexOf("code"));
 
@@ -104,7 +106,7 @@ class basicsOfString {
 
 
 
-    // used in prefix problems and file extension checks 
+    // used in prefix problems and file extension checks -- leetcode 2255
     s.startsWith("code"); // returns true if "code" is present in "s"
     System.out.println(s.startsWith("code"));
 
@@ -114,8 +116,34 @@ class basicsOfString {
 
 
 
+
+    // string to array - also when un-even spaces are there
+    String sentence = "i love    eating burger";  // un-even spaces, so we use regex
+    String[] words111 = sentence.split("\\s+"); 
+    // String[] words111 = sentence.split(" "); // ["i", "love", "eating", "burger"]
+    System.out.println("sentence length : "+words111.length);
+    System.out.println(Arrays.toString(words111));
+    //access
+    System.out.println("hi, i am first word of "+sentence+" : "+ words111[0]);
+    System.out.println(words111[1].startsWith("l"));
+    System.out.println(words111[words111.length - 1].length());
+    
+
+
+
+
+
     s.trim(); // used to remove leading and trailing spaces
     System.out.println(s.trim());
+
+
+
+
+    // array to string
+    String[] arrX = {"flower","flow","flight"};
+    String x = String.join(" ", arrX); // "flower flow flight"
+    System.out.println(x);
+
 
 
 
@@ -176,11 +204,11 @@ class basicsOfString {
 
 
     // Type Conversion
-    int x = Integer.parseInt("123"); // String -> int
-    System.out.println(x); // here x is int
+    int x111 = Integer.parseInt("123"); // String -> int
+    System.out.println(x111); // here x is int
 
-    String y = String.valueOf(123); // int -> String
-    System.out.println(y); // here y is string
+    String y111 = String.valueOf(123); // int -> String
+    System.out.println(y111); // here y is string
 
     }
 }
