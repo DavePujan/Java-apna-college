@@ -54,6 +54,7 @@ public class basicLinkList {
         return head; // head remains unchanged
     }
 
+
     public static void main(String[] args) {
         Node head = new Node(1);
         head.next = new Node(2);
