@@ -1,4 +1,4 @@
-//  ll 92 - still wrong
+//  ll 92 - still wrong - go to E:\DSA TCS\09\reverseSublistLtoR.java
 
 public class reverseLL2 {
 
